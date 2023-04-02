@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherViewController" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImage" destination="VWs-Q3-pdH" id="8lz-tw-7Uh"/>
+                <outlet property="cityName" destination="7fO-8k-6iE" id="NvV-F2-LA9"/>
+                <outlet property="temperature" destination="Y0i-XK-0q7" id="jCC-m5-KjZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weatherType" destination="sPc-E0-AUI" id="Jpb-x2-LU3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VWs-Q3-pdH">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7rg-bM-kwA">
+                    <rect key="frame" x="32" y="418" width="329" height="16"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fO-8k-6iE">
+                            <rect key="frame" x="164.66666666666666" y="0.0" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0i-XK-0q7">
+                            <rect key="frame" x="164.66666666666666" y="8" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPc-E0-AUI">
+                            <rect key="frame" x="164.66666666666666" y="16" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7rg-bM-kwA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="12i-VT-hRY"/>
+                <constraint firstItem="7rg-bM-kwA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Gfg-3A-lWf"/>
+                <constraint firstItem="VWs-Q3-pdH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jjb-73-7lT"/>
+                <constraint firstItem="VWs-Q3-pdH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OET-Mu-mgO"/>
+                <constraint firstItem="7rg-bM-kwA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Oy6-IZ-m4e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7rg-bM-kwA" secondAttribute="trailing" constant="32" id="fMS-Ab-O9z"/>
+                <constraint firstAttribute="bottom" secondItem="VWs-Q3-pdH" secondAttribute="bottom" id="j1V-AV-4Py"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VWs-Q3-pdH" secondAttribute="trailing" id="tSt-CE-DN0"/>
+            </constraints>
+            <point key="canvasLocation" x="-10" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
